@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="page">
+                <div class="image-section">
+                    <img src="img.jpeg" width="100%">
+                </div>
+                <div class="form-section">
+                    <h1>ACCOUNT LOGIN</h1>
+                    <input type="text" placeholder="User name" id="username">
+                    
+                    <input type="password" placeholder="password" id="password">
+                    <div class="para"><p id="error1"></p><p id="error2"></p></div>
+                    <button id="click" onclick="formvalidation()">Sign in</button>
+                    <div class="forget">
+                        <p>Forget <span>Username/ password?</span></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var user=document.getElementById("username");
+        var pass=document.getElementById("password");
+        var btn=document.getElementById("click");
+        var validate1=document.getElementById("error1");
+        var validate2=document.getElementById("error2")
+        
+        function formvalidation(){
+            if(user.value=="" && pass.value==""){
+                validate1.innerText="Username cannot be blank"
+                validate2.innerText="Password cannot be blank"
+            }
+            else{
+               if(user.value=""){
+                validate1.innerText="Username cannot be blank"
+                }
+            }
+            if(pass.value=""){
+                validate2.innerText="Username cannot be blank"
+            }
+            
+           
+
+            
+            
+        }
+    </script>
+</body>
+</html>

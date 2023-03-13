@@ -1,0 +1,49 @@
+.container{
+    width:85%;
+    margin:auto;
+}
+.image-section{
+    width:49%;
+}
+.form-section{
+    width:49%;
+    padding:30px;
+}
+.page{
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+}
+.forget{
+    text-align:center;
+}
+span{
+    color:green;
+}
+.page h1{
+    margin-top:130px;
+}
+.form-section input{
+     width:47%;
+     height:30px;
+}
+.para{
+    display:flex;
+    justify-content: space-around;
+}
+.form-section button{
+    display:block;
+    width:100%;
+    margin-top: 30px;
+    padding:10px 20px 10px 20px;
+    background-color:green;
+    color:white;
+    border:none;
+    font-size:20px;
+}
+#error1{
+    color:red;
+}
+#error2{
+    color:red;
+}
